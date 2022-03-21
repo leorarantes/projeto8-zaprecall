@@ -99,6 +99,7 @@ footer {
     height: 70px;
     background: #FFFFFF;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
@@ -111,6 +112,10 @@ footer a {
     color: #333333;
 }
 
+footer ion-icon {
+    font-size: 30px;
+}
+
 .flashcards-list {
     width: 307px;
     height: 335px;
@@ -119,34 +124,189 @@ footer a {
     overflow-y: scroll;
 }
 
-.flashcard-state1, .flashcard-state2, .flashcard-state3 {
+.flashcard-state1, .flashcard-state2, .flashcard-state3, .flashcard-state4 {
     width: 100%;
     margin-bottom: 25px;
     padding-right: 20px;
     padding-left: 20px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
 }
 
-.flashcard-state1 a:last-child, .flashcard-state2 a:last-child, .flashcard-state3 a:last-child {
+.flashcards-list li:last-child {
     margin-bottom: 0px;
 }
 
-.flashcard-state1 {
+.flashcard-state1, .flashcard-state4 {
     height: 65px;
     background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .flashcard-state1 a {
-    color: #333333;
     font-weight: 700;
     font-size: 17px;
     line-height: 19px;
+    color: #333333;
 }
 
 .flashcard-state1 ion-icon {
     font-size: 30px;
+}
+
+.flashcard-state2, .flashcard-state3 {
+    height: 131px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.flashcard-state2 {
+    position: relative;
+}
+
+.flashcard-state2 a {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.flashcard-state2 img {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+}
+
+.flashcard-state3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.flashcard-state3 a {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.flashcard-answer-box {
+    width: 266px;
+    height: 60px;
+}
+
+.flashcard-user-answer-box {
+    width: 273px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flashcard-user-answer-box div {
+    width: 86px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.flashcard-user-answer-box a {
+    width: 70px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.flashcard-user-answer-box div:first-child {
+    background-color: #FF3030;
+}
+
+.flashcard-user-answer-box div:nth-child(2) {
+    background-color: #FF922E;
+}
+
+.flashcard-user-answer-box div:last-child {
+    background-color: #2FBE34;
+}
+
+.flashcard-state4 a {
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 700;
+    text-decoration-line: line-through;
+}
+
+.flashcard-state4 ion-icon {
+    font-size: 30px;
+}
+
+.red {
+    color: #FF3030;
+}
+
+.orange {
+    color: #FF922E;
+}
+
+.green {
+    color: #2FBE34;
+}
+
+.icons-box {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-box a {
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+.icons-box a:first-child, .icons-box a:last-child {
+    margin-right: 0px;
+}
+
+.footer-state-2 {
+    height: 171px;
+    justify-content: space-evenly;
+}
+
+.result {
+    width: 126px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.result img {
+    width: 23px;
+    height: 23px;
+}
+
+.result span {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.footer-state-2 a {
+    width: 222px;
 }
